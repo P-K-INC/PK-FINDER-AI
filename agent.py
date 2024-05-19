@@ -1,9 +1,14 @@
 from langchain import OpenAI
 from langchain_experimental.agents import create_pandas_dataframe_agent
 import pandas as pd
+from dotenv import load_dotenv
+import os 
 
 # Setting up the api key
-API_KEY = "123"
+
+load_dotenv()
+
+API_KEY = os.getenv('API_KEY')
 
 
 def create_agent(filename: str):
