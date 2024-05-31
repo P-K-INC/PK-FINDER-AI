@@ -4,7 +4,7 @@ import json
 import time
 from agent import query_agent, create_agent
 caminho_imagem = "image/logo.png"
-st.set_page_config(page_title='PKFinder', page_icon='http://localhost:8501/image/favicon.png', layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title='PKFinder', page_icon='image/favicon.png', layout="centered", initial_sidebar_state="auto", menu_items=None)
 def decode_response(response: str) -> dict:
     """This function converts the string response from the model to a dictionary object.
 
